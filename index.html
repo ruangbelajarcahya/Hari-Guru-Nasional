@@ -44,6 +44,18 @@ h2{font-size:28px;margin:8px 0 20px;color:var(--accent2)}
 .memo small{color:var(--accent);letter-spacing:.12em;text-transform:uppercase;font-size:11px;font-weight:500}
 .memo h3{margin:2px 0 6px;font:600 18px 'Playfair Display',Georgia,serif;color:var(--accent2)}
 .memo p{margin:0;color:var(--ink);font-size:15px}
+.c{opacity:.13;transition:opacity .3s}
+.c.on{opacity:1}
+.c.cur{box-shadow:2px 0 0 var(--accent)}
+.boy{animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.wave3{transform-origin:138px 142px;animation:wave3 .9s ease-in-out infinite alternate}
+@keyframes wave3{from{transform:rotate(-12deg)}to{transform:rotate(16deg)}}
+.blink{transform-origin:100px 88px;animation:blink 4s infinite}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+.pop{transform-origin:48px 40px;animation:pop 2.4s ease-in-out infinite}
+@keyframes pop{50%{transform:scale(1.07)}}
+.me svg{width:min(230px,64vw);height:auto;display:block;margin:0 auto 8px}
 .quote{font-family:'Playfair Display',Georgia,serif;font-size:22px;color:var(--ink);font-style:italic}
 .from{margin-top:20px;color:var(--muted)}
 .from b{color:var(--accent2);font-size:18px;display:block}
@@ -86,7 +98,8 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:0 24px 40px}
 
   <section class="reveal">
     <h2>Dari Cahya</h2>
-    <div class="card" style="padding:28px 24px">
+    <div class="me"><svg viewBox="0 0 200 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kartun Cahya melambaikan tangan"><g class="pop"><rect x="2" y="6" width="96" height="34" rx="14" fill="#fff" stroke="#d9822b" stroke-width="2"/><path d="M58 39 L68 52 L76 39Z" fill="#fff" stroke="#d9822b" stroke-width="2" stroke-linejoin="round"/><rect x="57" y="36" width="20" height="5" fill="#fff"/><text x="50" y="28" text-anchor="middle" font-size="13" font-weight="600" fill="#2b2a33" font-family="Poppins,system-ui,sans-serif">Terima kasih!</text></g><g class="boy"><path d="M62 142 Q46 165 56 184" fill="none" stroke="#3f7d6b" stroke-width="15" stroke-linecap="round"/><path d="M52 190 Q52 126 100 126 Q148 126 148 190Z" fill="#3f7d6b"/><path d="M92 128 L92 150 M108 128 L108 150" stroke="#fff" stroke-width="2" stroke-linecap="round"/><g class="wave3"><path d="M138 142 L170 102" stroke="#3f7d6b" stroke-width="15" stroke-linecap="round"/><circle cx="172" cy="97" r="9" fill="#f6d0a8"/></g><circle cx="60" cy="90" r="7" fill="#f6d0a8"/><circle cx="140" cy="90" r="7" fill="#f6d0a8"/><circle cx="100" cy="86" r="41" fill="#f6d0a8"/><path d="M58 80 Q54 40 100 38 Q146 40 142 80 Q128 60 100 62 Q72 60 58 80Z" fill="#2b2a33"/><path d="M90 40 Q100 22 114 40Z" fill="#2b2a33"/><g class="blink"><ellipse cx="84" cy="90" rx="5" ry="6.5" fill="#2b2a33"/><ellipse cx="116" cy="90" rx="5" ry="6.5" fill="#2b2a33"/><circle cx="86" cy="87" r="1.8" fill="#fff"/><circle cx="118" cy="87" r="1.8" fill="#fff"/></g><circle cx="72" cy="104" r="6" fill="#f4a3a3" opacity=".65"/><circle cx="128" cy="104" r="6" fill="#f4a3a3" opacity=".65"/><path d="M88 102 Q100 120 112 102Z" fill="#b3414f" stroke="#2b2a33" stroke-width="2" stroke-linejoin="round"/><path d="M94 111 Q100 116 106 111" fill="#f08a8a"/></g><text class="heart" x="150" y="60" font-size="16" fill="#e0607e">♥</text></svg></div>
+    <div class="card" id="letter" style="padding:28px 24px">
       <p style="margin-bottom:16px">Buat Ibu dan Bapak, makasih banyak ya atas semua ilmu, bimbingan, dan kesabarannya selama Cahya sekolah dulu. Rasanya baru kemarin masih duduk di kelas, belajar bareng teman-teman, ngerjain tugas, bercanda. Sekarang kalau diingat-ingat, ternyata banyak banget hal yang bikin kangen. Mungkin dulu Cahya belum sepenuhnya sadar betapa berharganya semua waktu dan pengalaman itu.</p>
       <p style="margin-bottom:16px">Sekarang Cahya sudah mulai perjalanan baru di bangku perkuliahan. Pastinya masih banyak hal yang harus dipelajari dan diperjuangkan. Cahya minta doa dari Ibu dan Bapak ya, semoga kuliahnya lancar, selalu diberi kemudahan, bisa melewati setiap tantangan, dan tentunya bisa meraih apa yang selama ini Cahya cita-citakan. Semoga suatu hari nanti Cahya bisa membawa kabar baik dan membuat Ibu dan Bapak ikut bangga.</p>
       <p>Sekali lagi, makasih banyak untuk semuanya ya, Ibu dan Bapak. Maaf kalau selama menjadi murid Cahya pernah bikin kecewa, banyak salah, atau ada sikap yang kurang berkenan. Cahya juga mohon maaf karena di Hari Guru tahun ini belum bisa berkunjung dan bertemu langsung di sekolah seperti yang mungkin Cahya inginkan. Semoga lain waktu ada kesempatan untuk kembali bertemu, bersilaturahmi, dan menyapa Ibu dan Bapak secara langsung. Semoga Ibu dan Bapak selalu sehat, bahagia, dan dilancarkan segala urusannya. Walaupun sekarang Cahya sudah nggak setiap hari bertemu dan belajar langsung di sekolah, bukan berarti Cahya lupa sama semua kebaikan yang pernah diberikan. Terima kasih sudah menjadi bagian dari perjalanan Cahya. ❤️</p>
@@ -140,6 +153,40 @@ document.getElementById('genBtn').addEventListener('click',function(){
     row.appendChild(info);row.appendChild(btn);box.appendChild(row);
   });
 });
+(function(){
+  var card=document.getElementById('letter');if(!card)return;
+  var chars=[];
+  card.querySelectorAll('p').forEach(function(p){
+    var text=p.textContent;p.textContent='';
+    text.split(' ').forEach(function(word,i,arr){
+      var w=document.createElement('span');w.style.cssText='display:inline-block;white-space:nowrap';
+      (word.match(/\p{Extended_Pictographic}\uFE0F?|[\s\S]/gu)||[]).forEach(function(ch){
+        var s=document.createElement('span');s.className='c';s.textContent=ch;w.appendChild(s);chars.push(s);
+      });
+      p.appendChild(w);
+      if(i<arr.length-1)p.appendChild(document.createTextNode(' '));
+    });
+  });
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var last=0,ticking=false;
+  function update(){
+    ticking=false;
+    var r=card.getBoundingClientRect(),vh=window.innerHeight||600;
+    var p=reduce?1:(vh*0.8-r.top)/(r.height+vh*0.1);
+    p=Math.max(0,Math.min(1,p));
+    var n=Math.round(p*chars.length);
+    if(n===last)return;
+    var lo=Math.min(n,last),hi=Math.max(n,last);
+    for(var i=lo;i<hi;i++)chars[i].classList.toggle('on',i<n);
+    if(last>0&&chars[last-1])chars[last-1].classList.remove('cur');
+    if(n>0&&n<chars.length)chars[n-1].classList.add('cur');
+    last=n;
+  }
+  function req(){if(!ticking){ticking=true;requestAnimationFrame(update)}}
+  window.addEventListener('scroll',req,{passive:true});
+  window.addEventListener('resize',req);
+  update();
+})();
 </script>
 </body>
 </html>
